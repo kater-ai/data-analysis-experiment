@@ -1,0 +1,10 @@
+1. The highest inventory turnover is found in "Water Bottle - 30 oz." with a turnover rate of 10.717172, indicating a very high rate of sales compared to inventory.
+2. "Mountain Tire Tube" has the second highest turnover rate at 8.080940, suggesting strong demand for mountain bike tire tubes.
+3. "Patch Kit/8 Patches" also shows a high turnover rate of 8.224227, indicating consistent demand for tire repair kits.
+4. The "Sport-100 Helmet" series shows a notably high turnover across colors, with Red having the highest at 5.807292, followed by Blue at 5.462725, and Black at 5.387597, indicating strong sales in safety equipment.
+5. "Fender Set - Mountain" has a turnover rate of 5.452442, suggesting a healthy demand for mountain bike fenders.
+6. The "Road Tire Tube" has a turnover rate of 6.107969, indicating strong demand for road bike tire tubes.
+7. "AWC Logo Cap" shows a high turnover rate of 5.586735, highlighting strong sales in cycling apparel.
+8. The "Touring Tire Tube" has a turnover rate of 4.054496, suggesting a good demand for touring bike tire tubes.
+9. "Road Bottle Cage" and "Mountain Bottle Cage" have turnover rates of 4.664850 and 5.232558 respectively, indicating strong sales in bike accessory categories.
+10. The "HL Mountain Tire" and "ML Mountain Tire" have high turnover rates of 3.732620 and 3.261236 respectively, showing strong demand in the mountain tire segment.

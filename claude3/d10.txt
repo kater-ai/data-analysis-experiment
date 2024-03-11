@@ -1,0 +1,21 @@
+Based on the provided data, here are ten notable trends:
+
+1. There is a clear seasonal pattern, with higher sales during the end of the year (November-December) and lower sales during the beginning of the year (January-February).
+
+2. The highest single-day total sales occurred on January 18, 2013, with $12,617.
+
+3. The 30-day moving average peaked on January 18, 2013, at $8,617, indicating a period of sustained high sales leading up to that date.
+
+4. There are several instances of zero or very low sales (e.g., January 24, 2013, with $2 in sales), suggesting potential closures or slow business days.
+
+5. Sales tend to be higher on weekends and holidays (e.g., December 31, 2012, and January 1, 2013).
+
+6. There are periods of consistent sales (e.g., June-August 2012, with sales generally between $2,000 and $5,000).
+
+7. The moving average smooths out the daily fluctuations and provides a better representation of the overall sales trend.
+
+8. There are occasional spikes in sales, such as on April 28, 2012 ($11,821), and September 24, 2012 ($11,033), which could indicate promotional events or other factors driving increased sales.
+
+9. The standard deviation of daily sales is $2,284, indicating a relatively high variability in sales from day to day.
+
+10. The correlation between total sales and the moving average is 0.72, suggesting a moderate positive relationship between the two variables.

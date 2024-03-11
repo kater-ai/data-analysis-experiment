@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "data-analysis-experiment"
+version = "0.1.0"
+description = ""
+authors = ["Robin Seitz <robinseitz@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.1"
+boto3 = "^1.34.59"
+openai = "^1.13.3"
+matplotlib = "^3.8.3"
+jinja2 = "^3.1.3"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
