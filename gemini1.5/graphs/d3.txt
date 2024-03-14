@@ -1,0 +1,146 @@
+**1. Distribution of Total Sales per Product:**
+
+This bar chart shows the average total sales for each product.
+
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "your-data-url"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "average",
+          "field": "TOTALSALES",
+          "as": "avg_sales"
+        }
+      ],
+      "groupby": ["PRODUCTNAME"]
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "PRODUCTNAME",
+      "type": "nominal",
+      "axis": {
+        "title": "Product Name"
+      }
+    },
+    "y": {
+      "field": "avg_sales",
+      "type": "quantitative",
+      "axis": {
+        "title": "Average Total Sales"
+      }
+    }
+  }
+}```
+
+**2. Sales Trend by Month and Year:**
+
+This line chart shows the total sales trend across months and years.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "your-data-url"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "TOTALSALES",
+          "as": "total_sales"
+        }
+      ],
+      "groupby": ["CALENDARYEAR", "MONTHNUMBEROFYEAR"]
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "MONTHNUMBEROFYEAR",
+      "type": "temporal",
+      "axis": {
+        "title": "Month",
+        "format": "%b"
+      }
+    },
+    "y": {
+      "field": "total_sales",
+      "type": "quantitative",
+      "axis": {
+        "title": "Total Sales"
+      }
+    },
+    "color": {
+      "field": "CALENDARYEAR",
+      "type": "nominal",
+      "legend": {
+        "title": "Year"
+      }
+    }
+  }
+}```
+
+**3. Proportion of Sales per Product Category:**
+
+This pie chart shows the percentage of total sales contributed by each product.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "your-data-url"
+  },
+    "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "TOTALSALES",
+          "as": "total_sales"
+        }
+      ],
+      "groupby": ["PRODUCTNAME"]
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "total_sales",
+          "as": "total_sales_all"
+        }
+      ]
+    },
+    {
+      "calculate": "datum.total_sales / datum.total_sales_all",
+      "as": "percentage"
+    }
+  ],
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "percentage",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "PRODUCTNAME",
+      "type": "nominal",
+      "legend": {
+        "title": "Product Name"
+      }
+    },
+    "tooltip": [
+      {"field": "PRODUCTNAME", "type": "nominal"},
+      {"field": "percentage", "type": "quantitative", "format": ".1%"}
+    ]
+  }
+}```

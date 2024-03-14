@@ -1,0 +1,110 @@
+Here are three different Vega-Lite specifications that highlight different aspects of the `PRODUCTSALESBYMONTHYEAR` table based on the provided metadata:
+
+1. **Bar Chart: Total Sales by Product**
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Total Sales by Product",
+  "data": {
+    "values": []
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "PRODUCTNAME",
+      "type": "nominal",
+      "axis": {
+        "title": "Product Name"
+      }
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "axis": {
+        "title": "Total Sales"
+      }
+    }
+  }
+}
+```
+
+This bar chart displays the total sales for each product, allowing you to compare sales performance across different products.
+
+2. **Bar Chart: Sales Trend by Month**
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Sales Trend by Month",
+  "data": {
+    "values": []
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "MONTHNUMBEROFYEAR",
+      "type": "quantitative",
+      "axis": {
+        "title": "Month"
+      }
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "axis": {
+        "title": "Total Sales"
+      }
+    },
+    "color": {
+      "field": "CALENDARYEAR",
+      "type": "nominal",
+      "legend": {
+        "title": "Year"
+      }
+    }
+  }
+}
+```
+
+This line chart shows the sales trend over the months of the year, with different lines representing different calendar years. It allows you to analyze seasonal patterns and compare sales performance across different years.
+
+3. **Scatter Plot: Sales by Product and Year**
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Sales by Product and Year",
+  "data": {
+    "values": []
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "PRODUCTKEY",
+      "type": "nominal",
+      "axis": {
+        "title": "Product Key"
+      }
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "axis": {
+        "title": "Total Sales"
+      }
+    },
+    "color": {
+      "field": "CALENDARYEAR",
+      "type": "nominal",
+      "legend": {
+        "title": "Year"
+      }
+    }
+  }
+}
+```
+
+This scatter plot displays the total sales for each product, with different colors representing different calendar years. It allows you to identify top-performing and underperforming products, as well as analyze sales trends over time for individual products.
+
+Note: In each of these specifications, the `data.values` field is left empty, as you mentioned that the user will input the data later. Once you have the actual data, you can replace the empty array with the corresponding data values.

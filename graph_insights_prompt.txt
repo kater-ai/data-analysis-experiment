@@ -1,0 +1,1 @@
+Given a png file containing a graph, analyze the graph and return 3 notable trends based on the graph.

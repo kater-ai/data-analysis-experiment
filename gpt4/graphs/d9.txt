@@ -1,0 +1,89 @@
+Based on the provided metadata, here are three Vega-Lite graph specifications that highlight different aspects of the dataset. These graphs assume that the user will input the data later.
+
+### Graph 1: Total Sales by Calendar Year
+
+This graph shows the total sales amount by calendar year, providing a clear view of sales trends over time.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Total sales by calendar year",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "CALENDARYEAR",
+      "type": "ordinal",
+      "title": "Calendar Year"
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "title": "Total Sales"
+    }
+  },
+  "data": { "values": [] }
+}
+```
+
+### Graph 2: Sales Minus Quota by Salesperson
+
+This graph compares the sales minus quota for each salesperson, allowing for an evaluation of sales performance relative to their quotas.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Sales minus quota by salesperson",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "SALESMINUSQUOTA",
+      "type": "quantitative",
+      "title": "Sales Minus Quota"
+    },
+    "y": {
+      "field": "FULLNAME",
+      "type": "nominal",
+      "title": "Salesperson Name"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.FIRSTNAME + ' ' + datum.LASTNAME",
+      "as": "FULLNAME"
+    }
+  ],
+  "data": { "values": [] }
+}
+```
+
+### Graph 3: Sales Amount Quota Achievement by Quarter
+
+This graph visualizes the sales amount quota achievement by each calendar quarter, helping to identify seasonal patterns or quarters with exceptional performance.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Sales amount quota achievement by quarter",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "CALENDARQUARTER",
+      "type": "ordinal",
+      "title": "Calendar Quarter"
+    },
+    "y": {
+      "field": "SALESAMOUNTQUOTA",
+      "type": "quantitative",
+      "title": "Sales Amount Quota"
+    },
+    "color": {
+      "field": "CALENDARYEAR",
+      "type": "nominal",
+      "title": "Calendar Year"
+    }
+  },
+  "data": { "values": [] }
+}
+```
+
+These graphs are designed to be flexible and can be adjusted or expanded based on the specific data and analysis needs.

@@ -1,0 +1,8 @@
+1. There is a positive correlation between yearly income and the number of purchases. This means that people with higher incomes tend to make more purchases.
+2. There is a large amount of variation in the data. This means that there are many people who do not follow the general trend. For example, there are some people with high incomes who make very few purchases, and there are some people with low incomes who make a lot of purchases.
+3. There does not appear to be a significant difference in the purchasing habits of men and women. This means that both men and women tend to follow the same general trend of making more purchases as their income increases.
+
+Score:
+1. 0 (This one is a stretch, there doesn't seem to be any strong correlation here based on the graph)
+2. 3
+3. 2 (While there doesn't see, to be a significant difference between men and women the trend mentioned is not correct)

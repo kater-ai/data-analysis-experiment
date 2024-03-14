@@ -1,0 +1,64 @@
+Here are three different Vega-Lite specifications that highlight different aspects of the dataset based on the provided table metadata:
+
+1. Bar chart showing the distribution of total sales by calendar year:
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Total Sales by Calendar Year",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "CALENDARYEAR",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "aggregate": "sum"
+    }
+  }
+}
+```
+
+2. Scatter plot showing the relationship between total sales and sales minus quota:
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Total Sales vs Sales Minus Quota",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "TOTALSALES",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "SALESMINUSQUOTA",
+      "type": "quantitative"
+    }
+  }
+}
+```
+
+3. Line chart showing the trend of sales amount quota over time:
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Sales Amount Quota Over Time",
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "DATEKEY",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "SALESAMOUNTQUOTA",
+      "type": "quantitative"
+    }
+  }
+}
+```
+
+Note that these specifications assume that the data will be provided in a format compatible with Vega-Lite. The `data` field has been left blank, and you will need to replace it with your actual data source when using these specifications.

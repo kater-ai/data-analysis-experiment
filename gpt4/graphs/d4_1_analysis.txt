@@ -1,0 +1,13 @@
+
+Based on the histogram provided:
+
+The most common yearly income in the dataset is in the range of approximately $60,000 to $80,000. This range has the highest frequency of records by a significant margin, indicating a concentration of incomes in this bracket.
+
+The income distribution is right-skewed, meaning there are fewer people with higher incomes. The frequency of records decreases as income increases beyond $80,000, which shows that higher incomes are less common among the observed records.
+
+There are very few records of individuals making more than $140,000 annually. The bars representing income ranges above $140,000 are much shorter, indicating that such high incomes are rare in this dataset.
+
+Score:
+1. 3
+2. 3
+3. 3

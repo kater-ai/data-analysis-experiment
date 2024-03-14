@@ -1,12 +1,10 @@
-Here are 10 notable data points/trends from the provided data:
-
-1. The majority of customers have a "Bachelors" or "Partial College" level of education.
-2. Many customers have 0 or 2 children at home, with fewer having 3 or more children at home.
-3. A significant number of customers own a house (HouseOwnerFlag = 1).
-4. The YearlyIncome ranges widely from $10,000 to $170,000.
-5. Common occupations include "Professional", "Management", and "Skilled Manual".
-6. There are customers from various locations/geography keys across the data.
-7. Many customers made their first purchase in 2011 or 2013.
-8. The CommutedDistance for most customers is between 0-10 miles.
-9. Some customers like those with CUSTOMERKEY 11176 and 11185 have made over 25 purchases.
-10. Certain rows like 11237-11250 seem to be for employees rather than customers based on the address details.
+The majority of customers have a "Bachelors" or "Partial College" level of education.
+Many customers have 0 or 2 children at home, with fewer having 3 or more children at home.
+A significant number of customers own a house (HouseOwnerFlag = 1).
+The YearlyIncome ranges widely from $10,000 to $170,000.
+Common occupations include "Professional", "Management", and "Skilled Manual".
+There are customers from various locations/geography keys across the data.
+Many customers made their first purchase in 2011 or 2013.
+The CommutedDistance for most customers is between 0-10 miles.
+Some customers like those with CUSTOMERKEY 11176 and 11185 have made over 25 purchases.
+Certain rows like 11237-11250 seem to be for employees rather than customers based on the address details.

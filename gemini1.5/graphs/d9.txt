@@ -1,0 +1,105 @@
+## Vega-Lite Specifications for Three Different Graphs
+
+Based on the provided table metadata for `SALESPERSONSALESQUOTA`, here are three different Vega-Lite specifications highlighting different aspects of the dataset:
+
+**1. Distribution of Sales Performance:**
+
+This bar chart shows the distribution of sales performance by comparing "Sales Minus Quota" across different "Calendar Year" values.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "your-data-url"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "count",
+          "field": "SALESMINUSQUOTA",
+          "as": "count"
+        }
+      ],
+      "groupby": ["CALENDARYEAR", "SALESMINUSQUOTA"]
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "SALESMINUSQUOTA",
+      "type": "quantitative",
+      "axis": {"title": "Sales Minus Quota"}
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "axis": {"title": "Count"}
+    },
+    "color": {
+      "field": "CALENDARYEAR",
+      "type": "nominal",
+      "legend": {"title": "Calendar Year"}
+    }
+  }
+}```
+
+**2. Sales Performance by Quarter:**
+
+This line chart shows the trend of "Total Sales" across different "Calendar Quarter" values within each "Calendar Year".
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "your-data-url"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "CALENDARQUARTER",
+      "type": "ordinal",
+      "axis": {"title": "Calendar Quarter"}
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "axis": {"title": "Total Sales"}
+    },
+    "color": {
+      "field": "CALENDARYEAR",
+      "type": "nominal",
+      "legend": {"title": "Calendar Year"}
+    }
+  }
+}```
+
+
+**3. Salesperson Performance Comparison:**
+
+This scatter plot compares "Total Sales" and "Sales Amount Quota" for each "Salesperson" identified by their "FirstName" and "LastName".
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "your-data-url"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "SALESAMOUNTQUOTA",
+      "type": "quantitative",
+      "axis": {"title": "Sales Amount Quota"}
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "axis": {"title": "Total Sales"}
+    },
+    "tooltip": [
+      {"field": "FIRSTNAME", "type": "nominal"},
+      {"field": "LASTNAME", "type": "nominal"}
+    ]
+  }
+}```

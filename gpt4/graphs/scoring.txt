@@ -1,0 +1,18 @@
+d3_1.png: 3
+d3_2.png: 2
+d3_3.png: 0
+
+d4_1.png: 3
+d4_2.png: 0
+d4_3.png: 3
+
+d9_1.png: 3
+d9_2.png: 2
+d9_3.png: 2
+
+Total: 18
+
+selected graphs:
+  - d3_1.png
+  - d4_1.png
+  - d9_1.png

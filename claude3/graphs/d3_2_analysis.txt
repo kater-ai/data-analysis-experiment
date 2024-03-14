@@ -1,0 +1,13 @@
+Based on the graph, I can identify the following 3 notable trends:
+
+1. Seasonal variation: The graph shows a distinct cyclical pattern, with sales peaking around the middle of the year (months 6-8) and dipping towards the beginning and end of the year. This suggests a seasonal fluctuation in sales, which could be influenced by factors such as holidays, weather, or consumer behavior patterns.
+
+2. Year-over-year growth: While the graph only shows data for one year (2011), the overall sales volume appears to be higher than the previous year (not shown). This implies a positive year-over-year growth trend, although the rate of growth cannot be determined from this single data point.
+
+3. Consistent monthly pattern: Despite the seasonal variations, the monthly sales patterns seem to be relatively consistent between the two years shown. The peaks and valleys occur in similar months, suggesting that the underlying factors driving the seasonal fluctuations are fairly stable from one year to the next.
+
+
+Score: 
+1. 2 (Some of this analysis is correct but other parts of it are just wrong)
+2. 3 (I think this is fair as the model says it's hard to determine but there does seem to be a general upward trend)
+3. 0 (This is straight up wrong. Only one year is shown)

@@ -1,0 +1,18 @@
+d3_1.png: 3
+d3_2.png: 3
+d3_3.png: 0 (This is the same as d3_1, just by the key instead of the name)
+
+d4_1.png: 3
+d4_2.png: 2 (maybe 2 or 3 if the information was predented better?)
+d4_3.png: 0 (May be more useful with %'s)
+
+d9_1.png: 3
+d9_2.png: 1 (Might be useful if it had used SALESQUOTA instead of SALESSUMQUOTA)
+d9_3.png: 0 (This graph was just wrong, datekey is an integer not a date)
+
+Total: 15
+
+Selected Graphs: 
+  - d3_2.png
+  - d4_1.png
+  - d9_1.png

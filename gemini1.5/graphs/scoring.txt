@@ -1,0 +1,19 @@
+d3_1.png: 3
+d3_2.png: 3
+d3_3.png: 2 (would be more useful if the percentages were in the legend, this was also incorrect initially and had to ask gemini to fix)
+
+d4_1.png: 0 (Graph not correct)
+d4_2.png: 3 
+d4_3.png: 0
+
+d9_1.png: 0
+d9_2.png: 2 (Would be 3 with different vis)
+d9_3.png: 3
+
+Total: 16
+
+
+Selected Graphs:
+  - d3_1.png
+  - d4_2.png
+  - d9_3.png

@@ -13,6 +13,8 @@ openai = "^1.13.3"
 matplotlib = "^3.8.3"
 jinja2 = "^3.1.3"
 jupyter = "^1.0.0"
+snowflake-connector-python = "^3.7.1"
+seaborn = "^0.13.2"
 
 [build-system]
 requires = ["poetry-core"]

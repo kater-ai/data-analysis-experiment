@@ -1,25 +1,10 @@
-Notable Trends in the Data:
-
-Education and Income:
-
-1. Higher education leads to higher income: Individuals with Bachelors and Graduate degrees tend to have higher yearly incomes than those with Partial College or High School education. 
-2. Education level impacts occupation: Individuals with higher education are more likely to hold Professional or Management positions, while those with lower education levels are more likely to hold Clerical, Skilled Manual, or Manual jobs.
-
-Occupation and Income:
-
-3. Professional and Management occupations have the highest incomes: These occupations have the highest median and maximum yearly incomes compared to other categories.
-4. Skilled Manual and Clerical occupations have moderate incomes: These occupations fall in the middle range of income distribution.
-5. Manual occupations have the lowest incomes: This category shows the lowest median and maximum yearly incomes.
-
-Gender and Income:
-
-6. There is a gender pay gap: While both genders have similar income distributions, men tend to have slightly higher incomes than women within the same education and occupation categories.
-
-Other Trends:
-
-7. Total revenue is not directly proportional to yearly income: While there is a general positive correlation, some individuals with lower yearly incomes have higher total revenue and vice versa. This suggests other factors like investments or business ownership might influence total revenue.
-8. Management positions are more prevalent at higher income levels: Individuals with higher incomes are more likely to hold Management positions, regardless of their educational background.
-9. There is a wider income range within Professional and Management occupations: These categories show a larger gap between the minimum and maximum yearly incomes compared to other occupations.
-10. Data suggests a possible underrepresentation of women in Management positions: Although the data set is limited, it shows a lower number of women holding Management positions compared to men. 
-
-These are just some of the notable trends observed in the data. Further analysis with larger datasets and additional variables could provide deeper insights and confirm these initial observations. 
+Higher education leads to higher income: Individuals with Bachelors and Graduate degrees tend to have higher yearly incomes than those with Partial College or High School education. 
+Education level impacts occupation: Individuals with higher education are more likely to hold Professional or Management positions, while those with lower education levels are more likely to hold Clerical, Skilled Manual, or Manual jobs.
+Professional and Management occupations have the highest incomes: These occupations have the highest median and maximum yearly incomes compared to other categories.
+Skilled Manual and Clerical occupations have moderate incomes: These occupations fall in the middle range of income distribution.
+Manual occupations have the lowest incomes: This category shows the lowest median and maximum yearly incomes.
+There is a gender pay gap: While both genders have similar income distributions, men tend to have slightly higher incomes than women within the same education and occupation categories.
+Total revenue is not directly proportional to yearly income: While there is a general positive correlation, some individuals with lower yearly incomes have higher total revenue and vice versa. This suggests other factors like investments or business ownership might influence total revenue.
+Management positions are more prevalent at higher income levels: Individuals with higher incomes are more likely to hold Management positions, regardless of their educational background.
+There is a wider income range within Professional and Management occupations: These categories show a larger gap between the minimum and maximum yearly incomes compared to other occupations.
+Data suggests a possible underrepresentation of women in Management positions: Although the data set is limited, it shows a lower number of women holding Management positions compared to men. 

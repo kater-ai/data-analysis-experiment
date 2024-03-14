@@ -1,0 +1,146 @@
+### Graph 1: Bar Chart - Total Sales by Product
+
+This graph aims to visualize the total sales for each product, providing a clear comparison across different products.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Total Sales by Product",
+  "data": {
+    "values": []
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "PRODUCTNAME",
+      "type": "nominal",
+      "axis": {
+        "title": "Product Name"
+      }
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "axis": {
+        "title": "Total Sales"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "PRODUCTNAME",
+        "type": "nominal"
+      },
+      {
+        "field": "TOTALSALES",
+        "type": "quantitative"
+      }
+    ]
+  }
+}
+```
+
+### Graph 2: Line Chart - Sales Trend Over Months
+
+This graph is designed to show the sales trend over different months, which can be filtered by product.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Sales Trend Over Months",
+  "data": {
+    "values": []
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "MONTHNUMBEROFYEAR",
+      "type": "ordinal",
+      "axis": {
+        "title": "Month of Year"
+      }
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "axis": {
+        "title": "Total Sales"
+      }
+    },
+    "color": {
+      "field": "PRODUCTNAME",
+      "type": "nominal",
+      "legend": {
+        "title": "Product Name"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "MONTHNUMBEROFYEAR",
+        "type": "ordinal"
+      },
+      {
+        "field": "TOTALSALES",
+        "type": "quantitative"
+      },
+      {
+        "field": "PRODUCTNAME",
+        "type": "nominal"
+      }
+    ]
+  }
+}
+```
+
+### Graph 3: Scatter Plot - Sales vs. Calendar Year by Product
+
+This graph aims to explore the relationship between sales and calendar years for different products, highlighting potential trends or outliers.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Sales vs. Calendar Year by Product",
+  "data": {
+    "values": []
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "CALENDARYEAR",
+      "type": "quantitative",
+      "axis": {
+        "title": "Calendar Year"
+      }
+    },
+    "y": {
+      "field": "TOTALSALES",
+      "type": "quantitative",
+      "axis": {
+        "title": "Total Sales"
+      }
+    },
+    "color": {
+      "field": "PRODUCTNAME",
+      "type": "nominal",
+      "legend": {
+        "title": "Product Name"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "CALENDARYEAR",
+        "type": "quantitative"
+      },
+      {
+        "field": "TOTALSALES",
+        "type": "quantitative"
+      },
+      {
+        "field": "PRODUCTNAME",
+        "type": "nominal"
+      }
+    ]
+  }
+}
+```
+
+Each of these graphs highlights a different aspect of the dataset: product performance, sales trends over time, and the relationship between sales and calendar years. Users can input their data to visualize these aspects using the provided Vega-Lite specifications.

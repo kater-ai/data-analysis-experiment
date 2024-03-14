@@ -1,0 +1,63 @@
+Here are three different graphs using the provided table metadata in the Vega-Lite specification, highlighting different aspects of the dataset:
+
+1. Bar Chart: Visualizing the distribution of customers by marital status
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Distribution of customers by marital status",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "MARITALSTATUS",
+      "type": "nominal"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative"
+    }
+  }
+}
+```
+
+2. Scatter Plot: Exploring the relationship between yearly income and number of cars owned
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Relationship between yearly income and number of cars owned",
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "YEARLYINCOME",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "NUMBERCARSOWNED",
+      "type": "quantitative"
+    }
+  }
+}
+```
+
+3. Pie Chart: Visualizing the distribution of customers by gender
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Distribution of customers by gender",
+  "mark": "arc",
+  "encoding": {
+    "theta": {
+      "field": "GENDER",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "GENDER",
+      "type": "nominal"
+    }
+  }
+}
+```
+
+Note: In all three examples, the `data` field is left blank, as you mentioned that the user will input the data later.

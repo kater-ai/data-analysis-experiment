@@ -1,10 +1,10 @@
-1. The highest month-over-month growth percentage was observed in January 2011, with a staggering 982.0033% increase from December 2010.
-2. The most significant month-over-month decline in revenue occurred in January 2014, with a -97.5646% drop from December 2013.
-3. June 2011 saw a remarkable month-over-month revenue growth of 31.3624%, the highest in the year 2011.
-4. The year 2013 ended with a consistent growth in revenue from October to December, showcasing increases of 15.5964%, 6.4334%, and 5.2474% respectively.
-5. The year 2012 started with a sharp decline in January, with a -31.0906% growth percentage from December 2011.
-6. June 2012 experienced the highest growth rate in 2012, with a 69.0867% increase in revenue from the previous month.
-7. The year 2013 showed a strong growth trend, with the highest revenue recorded in December at 1,874,128.
-8. March 2013 had a significant growth percentage of 36.1149%, the highest in the first half of 2013.
-9. The year 2013 demonstrated a notable recovery and growth, starting from January with a 37.3373% increase from December 2012, and maintaining a generally positive trend throughout the year.
-10. The data reveals a pattern of fluctuating growth rates with periods of significant increases followed by sharp declines, indicating a volatile revenue stream across the observed years.
+The highest month-over-month growth percentage was observed in January 2011, with a staggering 982.0033% increase from December 2010.
+The most significant month-over-month decline in revenue occurred in January 2014, with a -97.5646% drop from December 2013.
+June 2011 saw a remarkable month-over-month revenue growth of 31.3624%, the highest in the year 2011.
+The year 2013 ended with a consistent growth in revenue from October to December, showcasing increases of 15.5964%, 6.4334%, and 5.2474% respectively.
+The year 2012 started with a sharp decline in January, with a -31.0906% growth percentage from December 2011.
+June 2012 experienced the highest growth rate in 2012, with a 69.0867% increase in revenue from the previous month.
+The year 2013 showed a strong growth trend, with the highest revenue recorded in December at 1,874,128.
+March 2013 had a significant growth percentage of 36.1149%, the highest in the first half of 2013.
+The year 2013 demonstrated a notable recovery and growth, starting from January with a 37.3373% increase from December 2012, and maintaining a generally positive trend throughout the year.
+The data reveals a pattern of fluctuating growth rates with periods of significant increases followed by sharp declines, indicating a volatile revenue stream across the observed years.

@@ -1,0 +1,92 @@
+Given the table metadata for `PURCHASESBYDEMOGRAPHIC`, we can generate three different Vega-Lite graph specifications to highlight various aspects of the dataset. These graphs will focus on the distribution of yearly income, the relationship between the number of cars owned and the total number of children, and the count of customers by marital status. The data field is left blank for later input by the user.
+
+### Graph 1: Distribution of Yearly Income
+
+This histogram will display the distribution of `YEARLYINCOME` across the dataset.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Distribution of Yearly Income",
+  "data": {"name": "data"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "YEARLYINCOME",
+      "type": "quantitative",
+      "bin": true,
+      "title": "Yearly Income"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Number of Records"
+    }
+  }
+}
+```
+
+### Graph 2: Relationship Between Number of Cars Owned and Total Children
+
+This scatter plot will explore the relationship between the number of cars owned (`NUMBERCARSOWNED`) and the total number of children (`TOTALCHILDREN`) for each record in the dataset.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Relationship Between Number of Cars Owned and Total Children",
+  "data": {"name": "data"},
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "NUMBERCARSOWNED",
+      "type": "quantitative",
+      "title": "Number of Cars Owned"
+    },
+    "y": {
+      "field": "TOTALCHILDREN",
+      "type": "quantitative",
+      "title": "Total Number of Children"
+    },
+    "color": {
+      "field": "MARITALSTATUS",
+      "type": "nominal",
+      "title": "Marital Status"
+    },
+    "tooltip": [
+      {"field": "NUMBERCARSOWNED", "type": "quantitative"},
+      {"field": "TOTALCHILDREN", "type": "quantitative"}
+    ]
+  }
+}
+```
+
+### Graph 3: Count of Customers by Marital Status
+
+This bar chart will show the count of customers grouped by their marital status (`MARITALSTATUS`).
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Count of Customers by Marital Status",
+  "data": {"name": "data"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "MARITALSTATUS",
+      "type": "nominal",
+      "title": "Marital Status"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Number of Customers"
+    },
+    "color": {
+      "field": "MARITALSTATUS",
+      "type": "nominal"
+    }
+  }
+}
+```
+
+These graphs are designed to provide insights into different aspects of the `PURCHASESBYDEMOGRAPHIC` dataset, focusing on the financial, familial, and demographic dimensions. Users can input their data to visualize these aspects accordingly.

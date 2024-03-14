@@ -1,19 +1,10 @@
-1. Highest Total Revenue: Australia leads with a total revenue of $8,994,677, making it the highest revenue-generating region in the dataset.
-
-2. Highest Number of Customers: The Southwest region of the United States has the highest number of customers, totaling 4,450.
-
-3. Lowest Total Revenue: The Central region of the United States has the lowest total revenue, amounting to $2,998.
-
-4. Lowest Number of Customers: Both the Northeast and Central regions of the United States have the lowest number of customers, each with 8 customers.
-
-5. Revenue vs. Customer Count Discrepancy: Despite having fewer customers (3,591) than the Southwest region of the United States (4,450), Australia generates significantly higher revenue, indicating potentially higher spending per customer or higher-priced products/services.
-
-6. United States Regional Variation: The United States shows significant variation in total revenue and customer counts across its regions, with the Southwest being the most lucrative and Central the least.
-
-7. European Market Potential: The United Kingdom, Germany, and France collectively contribute a significant portion of the revenue, indicating a strong European market presence.
-
-8. Average Revenue per Customer in Australia: Australia's average revenue per customer is approximately $2,505, indicating a high value per customer in this region.
-
-9. United States' Southeast and Northeast Regions: These regions have an exceptionally low number of customers and revenue, which could indicate they are new markets, have data recording issues, or are significantly underperforming.
-
-10. Revenue Concentration in Top Regions: The top three regions (Australia, Southwest US, and Northwest US) account for a substantial portion of the total revenue, suggesting a concentration of sales in specific areas.
+Highest Total Revenue: Australia leads with a total revenue of $8,994,677, making it the highest revenue-generating region in the dataset.
+Highest Number of Customers: The Southwest region of the United States has the highest number of customers, totaling 4,450.
+Lowest Total Revenue: The Central region of the United States has the lowest total revenue, amounting to $2,998.
+Lowest Number of Customers: Both the Northeast and Central regions of the United States have the lowest number of customers, each with 8 customers.
+Revenue vs. Customer Count Discrepancy: Despite having fewer customers (3,591) than the Southwest region of the United States (4,450), Australia generates significantly higher revenue, indicating potentially higher spending per customer or higher-priced products/services.
+United States Regional Variation: The United States shows significant variation in total revenue and customer counts across its regions, with the Southwest being the most lucrative and Central the least.
+European Market Potential: The United Kingdom, Germany, and France collectively contribute a significant portion of the revenue, indicating a strong European market presence.
+Average Revenue per Customer in Australia: Australia's average revenue per customer is approximately $2,505, indicating a high value per customer in this region.
+United States' Southeast and Northeast Regions: These regions have an exceptionally low number of customers and revenue, which could indicate they are new markets, have data recording issues, or are significantly underperforming.
+Revenue Concentration in Top Regions: The top three regions (Australia, Southwest US, and Northwest US) account for a substantial portion of the total revenue, suggesting a concentration of sales in specific areas.

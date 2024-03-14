@@ -1,0 +1,131 @@
+These specifications outline three different Vega-Lite graphs highlighting various aspects of the PURCHASESBYDEMOGRAPHIC table. Remember to fill in the "data" field with your actual data before using these specifications.
+
+**1. Distribution of Numerical Features:**
+
+This bar chart shows the distribution of numerical features like YEARLYINCOME, HOUSEOWNERFLAG, CUSTOMERKEY, NUMBERCARSOWNED, TOTALCHILDREN, NUMBERCHILDRENATHOME, and NUMBEROFPURCHASES.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "your-data-url"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "count",
+          "fields": [
+            "YEARLYINCOME",
+            "HOUSEOWNERFLAG",
+            "CUSTOMERKEY",
+            "NUMBERCARSOWNED",
+            "TOTALCHILDREN",
+            "NUMBERCHILDRENATHOME",
+            "NUMBEROFPURCHASES"
+          ]
+        }
+      ],
+      "groupby": []
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "key",
+      "type": "ordinal",
+      "axis": {
+        "title": "Feature",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": "Count"
+      }
+    }
+  }
+}```
+
+**2. Relationship between Yearly Income and Number of Purchases:**
+
+This scatter plot explores the relationship between YEARLYINCOME and NUMBEROFPURCHASES. You can color-code the data points by additional categorical features like GENDER or MARITALSTATUS.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "your-data-url"
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "YEARLYINCOME",
+      "type": "quantitative",
+      "axis": {
+        "title": "Yearly Income"
+      }
+    },
+    "y": {
+      "field": "NUMBEROFPURCHASES",
+      "type": "quantitative",
+      "axis": {
+        "title": "Number of Purchases"
+      }
+    },
+    "color": {
+      "field": "GENDER",
+      "type": "nominal",
+      "legend": {
+        "title": "Gender"
+      }
+    }
+  }
+}```
+
+
+**3. Geographic Distribution of Customers:**
+
+This map visualizes the distribution of customers based on the GEOGRAPHYKEY. You can adjust the map projection and customize the appearance as needed.
+
+```json
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "your-data-url"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "count",
+          "field": "CUSTOMERKEY",
+          "as": "customer_count"
+        }
+      ],
+      "groupby": ["GEOGRAPHYKEY"]
+    }
+  ],
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "customer_count",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "orangered"
+      },
+      "legend": {
+        "title": "Customer Count"
+      }
+    },
+    "tooltip": {
+      "field": "customer_count",
+      "type": "quantitative"
+    }
+  }
+}```
+
+
+These are just three examples, and you can create many other visualizations based on your specific needs and the available data. Remember to adjust the specifications to match your data and desired analysis.

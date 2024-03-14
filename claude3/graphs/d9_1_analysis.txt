@@ -1,0 +1,13 @@
+Based on the graph, here are three notable trends:
+
+1. Steady increase over time: The sum of total sales is increasing steadily from 2010 to 2013, showing a consistent upward trend across the years depicted.
+2. Significant year-over-year growth: There is a substantial year-over-year increase in the sum of total sales, with each subsequent year showing a sizable jump from the previous year's value.
+3. Accelerating growth rate: The rate of increase in the sum of total sales appears to be accelerating, as the jump from 2012 to 2013 is larger than the increase from 2011 to 2012, which was in turn larger than the increase from 2010 to 2011.
+
+
+Score:
+1. 3
+2. 3
+3. 3
+
+Technically all of these are correct but they're more or less saying the same thing

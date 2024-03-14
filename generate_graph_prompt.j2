@@ -1,0 +1,11 @@
+You will recieve as input the metadata of one snowflake table formatted in the following way:
+
+TABLE METADATA:
+<fully qualified table name>; <column>; <column>; <column>...;
+Each <column> has the following format: <column name> <column datatype> <(precision, scale)> <NULL>; where precison and scale are optional and NULL is present if the column is nullable.
+
+Given this input, generate three different graphs using this metadata in the vega-lite sepcification which highlight different aspects of the dataset described by the metadata.
+Leave the data field blank, assume the user will input the data later.
+
+TABLE METADATA:
+{{ table }}

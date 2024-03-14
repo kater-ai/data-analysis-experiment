@@ -1,0 +1,8 @@
+1. There is a positive correlation between sales amount quota and total sales. This means that as the sales amount quota increases, the total sales also tend to increase. 
+2. The relationship between sales amount quota and total sales is not linear. This means that the increase in total sales is not proportional to the increase in sales amount quota. 
+3. There is a large amount of variation in total sales for any given sales amount quota. This means that other factors besides the sales amount quota are also important in determining total sales. 
+
+Score:
+1. 3
+2. 0 (The relationship seems fairly linear with the exception of some outliers)
+3. 2 (I mean I guess? Theres only a large amount of variation when the quota is 0, otherwise it seems to be ina fairly tight band)
